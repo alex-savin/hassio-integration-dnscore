@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/dnscore/brand/dark_logo@2x.png">
+    <img alt="DNS Core" src="custom_components/dnscore/brand/logo@2x.png" width="416">
+  </picture>
+</p>
+
 # DNS Core for Home Assistant
 
 A custom Home Assistant integration that monitors and controls a DNS Core
