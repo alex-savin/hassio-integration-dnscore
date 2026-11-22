@@ -1,0 +1,173 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "blocking": {
+        "default": "mdi:shield-check",
+        "state": {
+          "off": "mdi:shield-off-outline"
+        }
+      },
+      "blocklist": {
+        "default": "mdi:playlist-check",
+        "state": {
+          "on": "mdi:playlist-remove"
+        }
+      },
+      "certificate": {
+        "default": "mdi:certificate",
+        "state": {
+          "on": "mdi:certificate-outline"
+        }
+      },
+      "health": {
+        "default": "mdi:heart-pulse",
+        "state": {
+          "on": "mdi:alert-decagram"
+        }
+      },
+      "leader": {
+        "default": "mdi:crown-outline",
+        "state": {
+          "on": "mdi:crown"
+        }
+      },
+      "online": {
+        "default": "mdi:server-network",
+        "state": {
+          "off": "mdi:server-network-off"
+        }
+      },
+      "serving": {
+        "default": "mdi:dns",
+        "state": {
+          "off": "mdi:dns-outline"
+        }
+      },
+      "shared_settings": {
+        "default": "mdi:cog-sync"
+      },
+      "upstreams": {
+        "default": "mdi:cloud-check-outline",
+        "state": {
+          "on": "mdi:cloud-alert"
+        }
+      }
+    },
+    "button": {
+      "flush_cache": {
+        "default": "mdi:delete-sweep"
+      },
+      "refresh_blocklist": {
+        "default": "mdi:playlist-plus"
+      }
+    },
+    "sensor": {
+      "blocked": {
+        "default": "mdi:shield-remove"
+      },
+      "blocked_rate": {
+        "default": "mdi:shield-remove-outline"
+      },
+      "blocked_ratio": {
+        "default": "mdi:percent"
+      },
+      "blocking_resumes": {
+        "default": "mdi:timer-play-outline"
+      },
+      "blocklist_built": {
+        "default": "mdi:playlist-edit"
+      },
+      "blocklist_checked": {
+        "default": "mdi:playlist-check"
+      },
+      "blocklist_domains": {
+        "default": "mdi:format-list-numbered"
+      },
+      "cache_entries": {
+        "default": "mdi:database"
+      },
+      "cache_hit_rate": {
+        "default": "mdi:database-check"
+      },
+      "cached": {
+        "default": "mdi:database-arrow-right"
+      },
+      "certificate_expiry": {
+        "default": "mdi:certificate"
+      },
+      "certificate_renewal": {
+        "default": "mdi:certificate-outline"
+      },
+      "certificate_renewed": {
+        "default": "mdi:certificate"
+      },
+      "config_state": {
+        "default": "mdi:cog-sync"
+      },
+      "dma_free": {
+        "default": "mdi:memory"
+      },
+      "dma_largest": {
+        "default": "mdi:memory"
+      },
+      "dma_low": {
+        "default": "mdi:memory"
+      },
+      "forwarded": {
+        "default": "mdi:arrow-decision"
+      },
+      "forwarded_p90": {
+        "default": "mdi:timer-outline"
+      },
+      "internal_free": {
+        "default": "mdi:memory"
+      },
+      "leader": {
+        "default": "mdi:crown"
+      },
+      "members": {
+        "default": "mdi:server-network"
+      },
+      "processing_time": {
+        "default": "mdi:timer-outline"
+      },
+      "psram_free": {
+        "default": "mdi:memory"
+      },
+      "queries": {
+        "default": "mdi:dns"
+      },
+      "queries_rate": {
+        "default": "mdi:speedometer"
+      },
+      "servfail_sent": {
+        "default": "mdi:alert-circle-outline"
+      },
+      "term": {
+        "default": "mdi:counter"
+      },
+      "upstream_timeouts": {
+        "default": "mdi:timer-alert-outline"
+      },
+      "uptime": {
+        "default": "mdi:clock-start"
+      },
+      "version": {
+        "default": "mdi:package-variant"
+      }
+    },
+    "switch": {
+      "blocking": {
+        "default": "mdi:shield-check",
+        "state": {
+          "off": "mdi:shield-off-outline"
+        }
+      }
+    }
+  },
+  "services": {
+    "pause_blocking": {
+      "service": "mdi:timer-pause-outline"
+    }
+  }
+}

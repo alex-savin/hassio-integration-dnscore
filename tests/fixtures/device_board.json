@@ -1,0 +1,133 @@
+{
+  "api_routes": 75,
+  "api_version": 1,
+  "chip": {
+    "cores": 2,
+    "cpu_mhz": 360,
+    "image": "dnscore-p4.bin",
+    "mac": "02:00:5e:00:00:11",
+    "model": "ESP32-P4",
+    "revision": "v1.0"
+  },
+  "firmware": {
+    "build": "8acdcd7b368b372e",
+    "built": "Nov 21 2026",
+    "built_time": "20:07:34",
+    "coprocessor_compat": "unknown",
+    "coprocessor_framing": "unknown",
+    "coprocessor_shipped": "0.4.x",
+    "host_framing": "unknown",
+    "idf": "v6.1",
+    "image_state": 2,
+    "image_valid": true,
+    "project": "dnscore-p4",
+    "version": "0.94.5"
+  },
+  "hosted": {
+    "dma_largest_at_last_drop": 0,
+    "dma_largest_worst": 0,
+    "last_drop_uptime_s": 0,
+    "link": {
+      "enabled": true,
+      "failures": 0,
+      "recoveries": 0,
+      "relinks": 0,
+      "restarts_before_boot": 0,
+      "state": "disabled"
+    },
+    "ota_gate": {
+      "announced": false,
+      "judging": false,
+      "net_ok_sent": 0
+    },
+    "rpc_late_answer": 0,
+    "rx_dropped": 0,
+    "rx_no_copy": 0,
+    "rx_no_dma": 0,
+    "rx_no_pkt_buf": 0,
+    "rx_overrun": 0,
+    "rx_oversize": 0,
+    "rx_read_error": 0,
+    "tx_dropped": 0
+  },
+  "load": {
+    "avg_processing_ms": 0,
+    "queries_in_flight": 0,
+    "queries_total": 0,
+    "reset_reason": 1,
+    "tasks": 32,
+    "uptime_seconds": 27
+  },
+  "memory": {
+    "dma_free": 41000,
+    "dma_largest": 24000,
+    "dma_low": {
+      "during": "blocklist fetch + UniFi poll",
+      "free": 9000,
+      "largest_then": 5200,
+      "uptime_s": 3600,
+      "wall_s": 1795230756
+    },
+    "dma_min_free": 9000,
+    "flash_bytes": 16777216,
+    "internal_free": 61000,
+    "internal_largest": 30000,
+    "internal_min_free": 22000,
+    "nvs_free_entries": 640,
+    "nvs_total_entries": 756,
+    "nvs_used_entries": 116,
+    "psram_bytes": 33554432,
+    "psram_free": 21000000,
+    "psram_largest": 15000000,
+    "upper_flash": {
+      "attempted": false,
+      "reason": "the image header declares under 32 MB"
+    }
+  },
+  "network": {
+    "active": "ethernet",
+    "default_route_if": "eth0",
+    "eth_restarts": {
+      "count": 0,
+      "cured": 0
+    },
+    "ethernet_has_ip": true,
+    "ethernet_link": true,
+    "ip": "192.0.2.11",
+    "rx_drops": {
+      "fifo_overflows": 0,
+      "flow_control": "not built",
+      "missed_frames": 0
+    },
+    "stalls": {
+      "longest_ms": 0,
+      "over_50ms": 0,
+      "total_ms": 0,
+      "tx_paused_by_switch_ms": 0,
+      "tx_paused_longest_ms": 0
+    },
+    "tx_kick": {
+      "dma_opmode": "0x00000000",
+      "kicks": 0,
+      "no_desc": 0,
+      "recovered": 0,
+      "resyncs": 0,
+      "tx_threshold_bytes": 64
+    },
+    "wifi_connected": false,
+    "wifi_enabled": true,
+    "wifi_running": false,
+    "wifi_supported": false
+  },
+  "node": {
+    "id": "home-assistant",
+    "is_leader": false
+  },
+  "time_source": "ntp",
+  "web": {
+    "route_cap": 96,
+    "routes_failed": 0,
+    "routes_http": 71,
+    "routes_https": 73
+  }
+}

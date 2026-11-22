@@ -1,0 +1,299 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This DNS Core cluster is already set up.",
+      "invalid_discovery_info": "The DNS Core app's announcement did not say where it answers.",
+      "reauth_successful": "A new API token is in place.",
+      "wrong_cluster": "That node belongs to another cluster than the one this entry follows."
+    },
+    "error": {
+      "cannot_connect": "Failed to connect.",
+      "host_not_allowed": "The node does not answer to this name (HTTP 421). Use its IP address, its own DNS name, or the cluster's name.",
+      "https_required": "DNS Core refuses passwords and tokens over plain HTTP while its HTTPS works. Turn on HTTPS under Connection.",
+      "invalid_auth": "Wrong OTA password.",
+      "invalid_certificate": "The node's certificate could not be verified. Use the name on its certificate, or turn off certificate verification under Connection.",
+      "invalid_network": "Enter up to four IP addresses or ranges (such as 192.0.2.10 or 192.0.2.0/24), separated by commas, or leave it empty.",
+      "not_dnscore": "That address answers, but not as a DNS Core node.",
+      "setup_needed": "This node is not set up yet: set its OTA password in its console first.",
+      "token_not_accepted": "The new API token was made, but the node did not accept it. Try again in a minute.",
+      "token_refused": "The node refused to make the API token: {error}",
+      "too_many_attempts": "Too many wrong passwords from this address. Wait a few minutes and try again.",
+      "unknown": "Unexpected error."
+    },
+    "flow_title": "{name}",
+    "step": {
+      "credentials": {
+        "data": {
+          "ota_password": "OTA password",
+          "restrict_network": "Limit the token to"
+        },
+        "data_description": {
+          "ota_password": "Used once to make an API token for Home Assistant, then forgotten. Home Assistant never stores it.",
+          "restrict_network": "The token then works only from these addresses or ranges (up to four). The address Home Assistant used to reach the node is filled in; leave it empty to allow any."
+        },
+        "description": "{host} answers. Enter the cluster's OTA password to make an API token for Home Assistant. It reads the cluster's status and system state, turns blocking on and off, refreshes the blocklist and flushes caches; it cannot restart, update or change passwords."
+      },
+      "hassio_confirm": {
+        "description": "Set up the DNS Core cluster the {addon} app belongs to? Home Assistant will reach it at {host}.",
+        "title": "DNS Core through the Home Assistant app"
+      },
+      "reauth_confirm": {
+        "data": {
+          "ota_password": "OTA password",
+          "restrict_network": "Limit the token to"
+        },
+        "data_description": {
+          "ota_password": "Used once to make an API token for Home Assistant, then forgotten. Home Assistant never stores it.",
+          "restrict_network": "The token then works only from these addresses or ranges (up to four). The address Home Assistant used to reach the node is filled in; leave it empty to allow any."
+        },
+        "description": "The API token for {host} no longer works (revoked, or limited to another address). Enter the OTA password to make a new one.",
+        "title": "Make a new API token"
+      },
+      "user": {
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        },
+        "data_description": {
+          "host": "One node of the cluster: its DNS name (as on its certificate), the cluster's name, or an IP address. Home Assistant learns the other members from it.",
+          "port": "The node's HTTPS port: 443 unless you moved it."
+        },
+        "description": "Connect to a DNS Core node's admin API.",
+        "sections": {
+          "connection": {
+            "data": {
+              "ssl": "Use HTTPS",
+              "verify_ssl": "Verify the certificate"
+            },
+            "data_description": {
+              "ssl": "DNS Core accepts API tokens over HTTPS only.",
+              "verify_ssl": "Turn off only for a self-signed certificate."
+            },
+            "name": "Connection"
+          }
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "blocking": {
+        "name": "Blocking in effect"
+      },
+      "blocklist": {
+        "name": "Blocklist"
+      },
+      "certificate": {
+        "name": "Certificate"
+      },
+      "health": {
+        "name": "Health",
+        "state_attributes": {
+          "conditions": {
+            "name": "Conditions"
+          },
+          "status": {
+            "name": "Status"
+          }
+        }
+      },
+      "leader": {
+        "name": "Leader"
+      },
+      "online": {
+        "name": "Online"
+      },
+      "serving": {
+        "name": "Serving"
+      },
+      "shared_settings": {
+        "name": "Shared settings"
+      },
+      "upstreams": {
+        "name": "Upstreams",
+        "state_attributes": {
+          "failing": {
+            "name": "Failing"
+          },
+          "upstreams": {
+            "name": "Upstreams"
+          }
+        }
+      }
+    },
+    "button": {
+      "flush_cache": {
+        "name": "Flush cache"
+      },
+      "refresh_blocklist": {
+        "name": "Refresh blocklist"
+      }
+    },
+    "sensor": {
+      "blocked": {
+        "name": "Queries blocked"
+      },
+      "blocked_rate": {
+        "name": "Blocked per second"
+      },
+      "blocked_ratio": {
+        "name": "Blocked ratio"
+      },
+      "blocking_resumes": {
+        "name": "Blocking resumes"
+      },
+      "blocklist_built": {
+        "name": "Blocklist built"
+      },
+      "blocklist_checked": {
+        "name": "Blocklist checked"
+      },
+      "blocklist_domains": {
+        "name": "Domains on the blocklist"
+      },
+      "cache_entries": {
+        "name": "Cache entries"
+      },
+      "cache_hit_rate": {
+        "name": "Cache hit rate"
+      },
+      "cached": {
+        "name": "Queries cached"
+      },
+      "certificate_expiry": {
+        "name": "Certificate expiry"
+      },
+      "certificate_renewal": {
+        "name": "Certificate renewal",
+        "state": {
+          "failed": "Failed",
+          "idle": "Idle",
+          "ok": "OK",
+          "running": "Running"
+        }
+      },
+      "certificate_renewed": {
+        "name": "Last certificate renewal"
+      },
+      "config_state": {
+        "name": "Settings",
+        "state": {
+          "diverged": "Diverged",
+          "in-sync": "In sync",
+          "out-of-sync": "Out of sync",
+          "self": "This node",
+          "syncing": "Syncing"
+        }
+      },
+      "dma_free": {
+        "name": "DMA memory free"
+      },
+      "dma_largest": {
+        "name": "DMA largest block"
+      },
+      "dma_low": {
+        "name": "DMA low point"
+      },
+      "forwarded": {
+        "name": "Queries forwarded"
+      },
+      "forwarded_p90": {
+        "name": "Forwarded latency (p90)"
+      },
+      "internal_free": {
+        "name": "Internal memory free"
+      },
+      "leader": {
+        "name": "Leader"
+      },
+      "members": {
+        "name": "Members online"
+      },
+      "processing_time": {
+        "name": "Average processing time"
+      },
+      "psram_free": {
+        "name": "PSRAM free"
+      },
+      "queries": {
+        "name": "Queries"
+      },
+      "queries_rate": {
+        "name": "Queries per second"
+      },
+      "servfail_sent": {
+        "name": "SERVFAIL answers"
+      },
+      "term": {
+        "name": "Election term"
+      },
+      "upstream_timeouts": {
+        "name": "Upstream timeouts"
+      },
+      "uptime": {
+        "name": "Started"
+      },
+      "version": {
+        "name": "Version"
+      }
+    },
+    "switch": {
+      "blocking": {
+        "name": "Blocking",
+        "state_attributes": {
+          "resumes_at": {
+            "name": "Resumes at"
+          }
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "action_failed": {
+      "message": "The action failed: {error}"
+    },
+    "cluster_unreachable": {
+      "message": "No member of the cluster answered: {error}"
+    },
+    "entry_not_found": {
+      "message": "No DNS Core cluster with that config entry."
+    },
+    "entry_not_loaded": {
+      "message": "The DNS Core cluster {title} is not loaded."
+    },
+    "node_unreachable": {
+      "message": "The node did not answer: {error}"
+    },
+    "pause_out_of_range": {
+      "message": "Pause blocking for {min} to {max} minutes."
+    },
+    "refused": {
+      "message": "DNS Core refused it: {error}"
+    },
+    "token_cannot": {
+      "message": "The token may not do this ({error}). Sign in again to make a new token."
+    },
+    "token_refused": {
+      "message": "The node refused the API token: {error}"
+    },
+    "token_rejected": {
+      "message": "The node no longer accepts the API token: it was revoked."
+    }
+  },
+  "services": {
+    "pause_blocking": {
+      "description": "Turns blocking off on the whole cluster for a while; the nodes turn it back on by themselves when the time is up.",
+      "fields": {
+        "config_entry_id": {
+          "description": "The DNS Core cluster.",
+          "name": "Cluster"
+        },
+        "duration": {
+          "description": "How long to pause: 1 minute to 24 hours.",
+          "name": "Duration"
+        }
+      },
+      "name": "Pause blocking"
+    }
+  }
+}

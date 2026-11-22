@@ -1,0 +1,27 @@
+{
+  "agent": {
+    "after_level": "none",
+    "after_scopes": [],
+    "created_at": 1795317156,
+    "effective_level": "custom",
+    "effective_scopes": [
+      "status:read",
+      "filtering:write",
+      "resolution:write",
+      "system:read"
+    ],
+    "expires_at": 0,
+    "level": "custom",
+    "name": "home-assistant-0123abcd",
+    "networks": [],
+    "scopes": [
+      "status:read",
+      "filtering:write",
+      "resolution:write",
+      "system:read"
+    ]
+  },
+  "enabled": true,
+  "note": "shown once and never again: send it as 'Authorization: Bearer <token>' over HTTPS, to the REST API or to /mcp",
+  "status": "ok"
+}

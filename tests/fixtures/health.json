@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "id": "blocklist_empty",
+      "severity": "warn",
+      "text": "No blocklist is loaded, so nothing is being blocked."
+    }
+  ],
+  "status": "warn"
+}

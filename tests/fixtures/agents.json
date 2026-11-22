@@ -1,0 +1,152 @@
+{
+  "agents": [
+    {
+      "after_level": "none",
+      "after_scopes": [],
+      "created_at": 1795317156,
+      "denied": 1,
+      "effective_level": "custom",
+      "effective_scopes": [
+        "status:read",
+        "filtering:write",
+        "resolution:write",
+        "system:read"
+      ],
+      "expires_at": 0,
+      "last_route": "/api/health",
+      "last_used_at": 1795317156,
+      "level": "custom",
+      "name": "home-assistant-0123abcd",
+      "networks": [],
+      "requests": 11,
+      "scopes": [
+        "status:read",
+        "filtering:write",
+        "resolution:write",
+        "system:read"
+      ]
+    }
+  ],
+  "areas": [
+    {
+      "id": "status",
+      "read": "the cluster's state, query counters, the change log, how a name resolves",
+      "title": "Status & statistics",
+      "writable": false
+    },
+    {
+      "id": "querylog",
+      "read": "every query with the device that asked it, and the client list",
+      "title": "Query log & clients",
+      "writable": false
+    },
+    {
+      "id": "records",
+      "read": "the DNS records",
+      "title": "DNS records",
+      "writable": true,
+      "write": "add, change and delete DNS records"
+    },
+    {
+      "id": "filtering",
+      "read": "the allow and block lists, whether blocking is on, the blocklist's state",
+      "title": "Filtering",
+      "writable": true,
+      "write": "allow and block names, switch or pause blocking, update the blocklist"
+    },
+    {
+      "id": "resolution",
+      "read": "upstream servers, cache and rate-limit settings",
+      "title": "Resolution & cache",
+      "writable": true,
+      "write": "change upstreams, cache and rate limits, flush the cache"
+    },
+    {
+      "id": "system",
+      "read": "device logs, restarts, tasks, certificate, update and radio state",
+      "title": "System",
+      "writable": true,
+      "write": "restart, move leadership, certificates, cluster and radio settings, update checks; lent with an expiry"
+    }
+  ],
+  "clock_set": true,
+  "enabled": true,
+  "full_max_seconds": 2592000,
+  "max_agents": 16,
+  "max_networks": 4,
+  "now": 1795317156,
+  "presets": [
+    {
+      "help": "dashboards and alerts: state, counters and device health",
+      "id": "monitoring",
+      "lent": false,
+      "scopes": [
+        "status:read",
+        "system:read"
+      ],
+      "title": "Monitoring"
+    },
+    {
+      "help": "pause or switch blocking, allow or block a name",
+      "id": "home-automation",
+      "lent": false,
+      "scopes": [
+        "status:read",
+        "filtering:write"
+      ],
+      "title": "Home automation"
+    },
+    {
+      "help": "keep DNS records in step with DHCP or an inventory",
+      "id": "records-sync",
+      "lent": false,
+      "scopes": [
+        "status:read",
+        "records:write"
+      ],
+      "title": "Records sync"
+    },
+    {
+      "help": "look at everything a token may see, change nothing",
+      "id": "read-only",
+      "lent": false,
+      "scopes": [
+        "status:read",
+        "querylog:read",
+        "records:read",
+        "filtering:read",
+        "resolution:read",
+        "system:read"
+      ],
+      "title": "Read only"
+    },
+    {
+      "help": "records, lists, blocking and DNS settings (the old write level)",
+      "id": "ai-agent",
+      "lent": false,
+      "scopes": [
+        "status:read",
+        "querylog:read",
+        "records:write",
+        "filtering:write",
+        "resolution:write",
+        "system:read"
+      ],
+      "title": "AI agent"
+    },
+    {
+      "help": "everything a token can reach, with an expiry",
+      "id": "full",
+      "lent": true,
+      "scopes": [
+        "status:read",
+        "querylog:read",
+        "records:write",
+        "filtering:write",
+        "resolution:write",
+        "system:write"
+      ],
+      "title": "Full control (lent)"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "answered_locally": 0,
+  "avg_processing_time_ms": 3.4,
+  "block_percentage": 15,
+  "blocking_in_effect": true,
+  "blocklist_sync": {
+    "busy": false,
+    "consecutive_failures": 0,
+    "last_error": "",
+    "replications": 0,
+    "wanted": ""
+  },
+  "cache": {
+    "bytes": 0,
+    "capacity": 2048,
+    "enabled": true,
+    "entries": 1500,
+    "evictions": 0,
+    "expired": 0,
+    "expired_unrefreshed": 0,
+    "hit_rate": 60.0,
+    "hits": 60000,
+    "inserts": 0,
+    "misses": 40000,
+    "optimistic_hits": 0,
+    "uncacheable": 0
+  },
+  "cert_sync": {
+    "busy": false,
+    "consecutive_failures": 0,
+    "fingerprint": "72c9054c",
+    "last_error": "",
+    "replications": 0,
+    "wanted": ""
+  },
+  "cluster_leader": "",
+  "cname_cloaked": 0,
+  "cname_rewrites": 0,
+  "config_doc_bytes": 2631,
+  "config_doc_max": 49152,
+  "dma_free_bytes": 1764274176,
+  "dma_largest_block": 1764274176,
+  "dns_queries_blocked": 18000,
+  "dns_queries_cached": 60000,
+  "dns_queries_coalesced": 0,
+  "dns_queries_forwarded": 40000,
+  "dns_queries_rewritten": 0,
+  "dns_queries_total": 120000,
+  "dns_rewrites_count": 0,
+  "doh": {
+    "forwarded_inline": 0,
+    "forwarded_on_worker": 0,
+    "in_flight": 0,
+    "local": 0
+  },
+  "domains_in_filter": 412345,
+  "doq_connections": 0,
+  "doq_queries": 0,
+  "doq_running": false,
+  "doq_server": {
+    "answered_local": 0,
+    "closes_error": 0,
+    "closes_tls_alert": 0,
+    "contexts_high": 0,
+    "contexts_live": 0,
+    "contexts_max": 48,
+    "contexts_refused": 0,
+    "incoming_errors": 0,
+    "jobs_high": 0,
+    "packets_in": 0,
+    "packets_out": 0,
+    "pass_max_us": 0,
+    "passes": 0,
+    "protocol_closes": 0,
+    "resolve_avg_us": 0,
+    "resolve_max_us": 0,
+    "resolves": 0,
+    "send_errors": 0,
+    "tls_ready": false
+  },
+  "doq_shed": 0,
+  "doq_upstream_connections": {
+    "open": 0,
+    "reaped": 0,
+    "send_errors": 0,
+    "started": 0
+  },
+  "doq_upstream_failures": {},
+  "dot": {
+    "connections_active": 0,
+    "connections_total": 0,
+    "evicted_idle": 0,
+    "framing_errors": 0,
+    "handshakes_failed": 0,
+    "max_connections": 12,
+    "queries_served": 0,
+    "rejected_no_slot": 0,
+    "running": true,
+    "tls": {
+      "ciphers": {},
+      "failed": 0,
+      "handshakes": 0,
+      "tls12": 0,
+      "tls13": 0
+    }
+  },
+  "filter_version_hash": "d41edfc4",
+  "firmware_version": "0.94.5",
+  "https": {
+    "tls": {
+      "by_group": {
+        "P-256": {
+          "avg_ms": 51,
+          "max_ms": 85,
+          "n": 6
+        }
+      },
+      "ciphers": {
+        "TLS1-3-CHACHA20-POLY1305-SHA256": 6
+      },
+      "failed": 0,
+      "handshake_ms_last": 43,
+      "handshake_ms_max": 85,
+      "handshake_ms_p50": 66,
+      "handshake_ms_p90": 132,
+      "handshake_ms_p99": 132,
+      "handshakes": 6,
+      "tls12": 0,
+      "tls13": 6
+    }
+  },
+  "is_leader": false,
+  "latency": {
+    "blocked": {
+      "buckets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "count": 0,
+      "p50_us": 0,
+      "p90_us": 0,
+      "p99_us": 0
+    },
+    "cached": {
+      "buckets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "count": 0,
+      "p50_us": 0,
+      "p90_us": 0,
+      "p99_us": 0
+    },
+    "forwarded": {
+      "buckets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "count": 40000,
+      "p50_us": 18000,
+      "p90_us": 42000,
+      "p99_us": 120000
+    },
+    "stream": {
+      "buckets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "count": 0,
+      "p50_us": 0,
+      "p90_us": 0,
+      "p99_us": 0
+    }
+  },
+  "leader_ip": "",
+  "lwip_drops": {
+    "ip": 0,
+    "ip_chkerr": 0,
+    "ip_err": 0,
+    "ip_lenerr": 0,
+    "ip_opterr": 0,
+    "link": 0,
+    "udp": 0,
+    "udp_chkerr": 0,
+    "udp_memerr": 0
+  },
+  "memory_free_bytes": 1771692032,
+  "node_id": "home-assistant",
+  "nvs_free_entries": 640,
+  "nvs_total_entries": 756,
+  "nvs_used_entries": 116,
+  "omitted": [
+    "dns_rewrites",
+    "https.held",
+    "https.workers",
+    "http.held"
+  ],
+  "oversize_answers": 0,
+  "parallel_races": 0,
+  "parallel_skipped": 0,
+  "parallel_wins": 0,
+  "parse_errors": 0,
+  "pending_in_use": 0,
+  "plain_dns": {
+    "enabled": true,
+    "refused_http_doh": 0,
+    "refused_tcp": 0,
+    "refused_udp": 0
+  },
+  "prefetched": 0,
+  "psram_free_bytes": 1764274176,
+  "quic_crypto": {
+    "chacha_first": "not_run",
+    "hp_selftest": "not_run",
+    "hybrid": {
+      "client_secp256r1mlkem768": 0,
+      "client_x25519mlkem768": 0,
+      "failures": 0,
+      "server_secp256r1mlkem768": 0,
+      "server_x25519mlkem768": 0
+    },
+    "psa_errors": 0
+  },
+  "rate_limited": 0,
+  "ratelimit": {
+    "dropped": 0,
+    "qps": 0,
+    "tracked_clients": 0
+  },
+  "refresh_failures": 0,
+  "refused_class": 0,
+  "reply_send_failures": 0,
+  "reply_slot_drops": 0,
+  "responses_dropped": 0,
+  "rules_ignored": 0,
+  "rules_loaded": 0,
+  "rules_max": 128,
+  "servfail_sent": 3,
+  "sockets": {
+    "dot_max": 12,
+    "dot_open": 0,
+    "http_max": 6,
+    "http_open": 0,
+    "https_max": 10,
+    "https_open": 1,
+    "lwip_max": 72,
+    "lwip_max_active_tcp": 60,
+    "lwip_open": 0,
+    "tcp53_max": 4,
+    "tcp53_open": 0,
+    "upstream_channel_budget": 20,
+    "upstream_channels_each": 5,
+    "upstream_channels_open": 0
+  },
+  "stale_served": 0,
+  "tcp": {
+    "connections_active": 0,
+    "connections_total": 0,
+    "framing_errors": 0,
+    "idle_closed": 0,
+    "max_connections": 4,
+    "queries_served": 0,
+    "rejected_no_slot": 0,
+    "running": true
+  },
+  "time": 1795317156,
+  "tls_crypto": {
+    "client": {
+      "other": 0,
+      "secp256r1": 0,
+      "secp256r1mlkem768": 0,
+      "secp384r1": 0,
+      "x25519mlkem768": 0
+    },
+    "failures": 0,
+    "hooks_installed": true,
+    "post_quantum": true,
+    "server": {
+      "other": 0,
+      "secp256r1": 6,
+      "secp256r1mlkem768": 0,
+      "secp384r1": 0,
+      "x25519mlkem768": 0
+    },
+    "worker_jobs": 0,
+    "worker_max_wait_us": 0
+  },
+  "truncated_sent": 0,
+  "uploads": {
+    "inline": 0,
+    "off_httpd_task": 0
+  },
+  "upstream_acquire": {
+    "any_free": 0,
+    "waited": 0,
+    "warm": 0
+  },
+  "upstream_health": [
+    {
+      "avg_ms": 0,
+      "chan_wait_avg_us": 0,
+      "chan_wait_max_us": 0,
+      "consec_failures": 0,
+      "down_s": 0,
+      "failures": 0,
+      "fallback": false,
+      "handshakes": 0,
+      "last_error": "none",
+      "queries": 0,
+      "resume_offered": 0,
+      "resumed": 0,
+      "spec": "1.1.1.1",
+      "zero_rtt": 0
+    },
+    {
+      "avg_ms": 0,
+      "chan_wait_avg_us": 0,
+      "chan_wait_max_us": 0,
+      "consec_failures": 0,
+      "down_s": 0,
+      "failures": 0,
+      "fallback": false,
+      "handshakes": 0,
+      "last_error": "none",
+      "queries": 0,
+      "resume_offered": 0,
+      "resumed": 0,
+      "spec": "8.8.8.8",
+      "zero_rtt": 0
+    }
+  ],
+  "upstream_hedge": {
+    "enabled": false,
+    "fired": 0,
+    "queries": 0,
+    "second_won": 0
+  },
+  "upstream_replies": 0,
+  "upstream_tc_retries": {
+    "answered": 0,
+    "retried": 0
+  },
+  "upstream_timeouts": 12,
+  "upstream_tls": {
+    "failures": 0,
+    "handshakes": 0,
+    "keepalives": 0,
+    "mismatched": 0,
+    "queries": 0,
+    "warmups": 0
+  },
+  "uptime_seconds": 86400
+}

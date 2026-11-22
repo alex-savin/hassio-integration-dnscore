@@ -1,0 +1,16 @@
+{
+  "app_version": "0.94.5",
+  "build_date": "Nov 21 2026",
+  "build_time": "20:07:34",
+  "confirmed": true,
+  "failures_since_boot": 0,
+  "image_state": -1,
+  "last_failure": "",
+  "last_failure_at_bytes": 0,
+  "last_failure_seconds_ago": -1,
+  "next_partition": "?",
+  "running_partition": "?",
+  "update": {
+    "state": "idle"
+  }
+}

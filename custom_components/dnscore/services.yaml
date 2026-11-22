@@ -1,0 +1,12 @@
+pause_blocking:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: dnscore
+    duration:
+      required: true
+      example: "00:10:00"
+      selector:
+        duration:

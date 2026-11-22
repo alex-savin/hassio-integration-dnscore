@@ -1,0 +1,64 @@
+{
+  "active_nodes": [
+    {
+      "certificate": {
+        "fingerprint": "72c9054c",
+        "not_before": 1795317060
+      },
+      "config_digest": "4a014bb72316758f",
+      "config_generation": 0,
+      "config_state": "self",
+      "filter_version_hash": "00000000",
+      "firmware_version": "0.94.5",
+      "host_name": "",
+      "id": "",
+      "ip": "192.0.2.14",
+      "last_seen_ms_ago": 0,
+      "member_id": "0000000000000000",
+      "serving": true,
+      "stands": false,
+      "status": "online",
+      "trusted": true,
+      "uptime_seconds": 27
+    }
+  ],
+  "cluster_key_id": "",
+  "config_generation": 1,
+  "config_sync_enabled": true,
+  "isolated": false,
+  "join": {
+    "holding_password": true,
+    "last_status": 0
+  },
+  "leader": "",
+  "quorum_of": 1,
+  "relay": {
+    "in_bad": 0,
+    "in_cluster_key": 0,
+    "in_cred": 0,
+    "in_early": 0,
+    "in_peer": 0,
+    "in_unsigned": 0,
+    "out_failed": 0,
+    "out_found_closed": 0,
+    "out_fresh": 0,
+    "out_http": 0,
+    "out_https": 0,
+    "out_legacy": 0,
+    "out_refused": 0,
+    "out_retried": 0,
+    "out_reused": 0,
+    "out_signed": 0,
+    "out_timeout": 0,
+    "times": {}
+  },
+  "syncing": false,
+  "term": 0,
+  "totals": {
+    "blocked": 0,
+    "cached": 0,
+    "forwarded": 0,
+    "nodes": 0,
+    "queries": 0
+  }
+}

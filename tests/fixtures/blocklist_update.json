@@ -1,0 +1,26 @@
+{
+  "attempts": 2,
+  "busy": false,
+  "changes": 1,
+  "is_leader": true,
+  "last_attempt": 1795310000,
+  "last_change": 1795223600,
+  "last_crc": "d41edfc4",
+  "last_domains": 412345,
+  "last_ok": true,
+  "last_result": "unchanged",
+  "last_success": 1795310000,
+  "leader": "dns-board-01",
+  "next_check_s": 79200,
+  "refresh_hours": 24,
+  "running": {
+    "build_epoch": 1795219200,
+    "crc": "d41edfc4",
+    "domains": 412345,
+    "index_bytes": 0,
+    "load_ms": 0,
+    "loaded": true
+  },
+  "stage": "idle",
+  "url": "https://blocklists.example.com/latest.bin"
+}
